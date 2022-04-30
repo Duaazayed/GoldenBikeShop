@@ -49,6 +49,10 @@ input[type=text], input[type=password], input[type=date], input[type=time] {
 
 li{
     padding: 0 10px;
+    width: 50%;
+}
+.liheader{
+  padding: 0 10px;
     width: 100px;
 }
 ul, li{
@@ -62,3 +66,8 @@ ul, li{
   color: #aa8c04;
   font-size: 19px;
 }
+/*span{
+  font-size: 19px;
+  display:inline-table;
+  text-align: left;
+}*/

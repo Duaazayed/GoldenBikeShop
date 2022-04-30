@@ -1,18 +1,5 @@
-/*const doReservation= async(e)=>{
-  e.preventDefault();
-  const username= document.getElementById('username').value;
-  const reservation_date= document.getElementById('reservation_date').value;
-  const reservation_start_time= document.getElementById('reservation_start_time').value;
-  const reservation_end_time= document.getElementById('reservation_end_time').value;
-  const res= await reservation({reservation_date,reservation_start_time,reservation_end_time}).catch((err)=>{
-    alert('Failed to reserve. Please try again later.');
-    });
- 
-  
-      window.location.href = "confirmReservatio.html";
 
-  };
-*/
+
 const doLogin = async (e) => {
     e.preventDefault();
     const username = document.getElementById('username').value;
@@ -31,12 +18,12 @@ const doLogin = async (e) => {
     window.location.href = 'home.html';
   };
   
-  const doRegister = (e) => {
+  const doRegister = async(e) => {
     e.preventDefault();
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-  
+    console.log('trying to register');
     const res = await register({
       username,
       email,
@@ -44,7 +31,7 @@ const doLogin = async (e) => {
     });
   
     if (res) {
-      window.location.href = '/';
+      window.location.href = 'home.html';
     }
   };
   const doLogout = (e) => {
@@ -53,7 +40,7 @@ const doLogin = async (e) => {
     window.location.href = 'index.html';
   };
   
-  (() => {
+  /*(() => {
     if (storageHasData()) {
       const isAuth = getStorage('isAuth');
       if (!isAuth) {
@@ -63,4 +50,4 @@ const doLogin = async (e) => {
       }
     }
   })();
-
+*/

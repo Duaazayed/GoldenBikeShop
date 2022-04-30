@@ -38,6 +38,15 @@ const _post = async (url, data, options = DEFAULT_OPTIONS) => {
   return res.json();
 };
 
+const _post_with_auth = async (url, data, options = DEFAULT_OPTIONS_WITH_AUTH) => {
+  const res = await fetch(url, {
+    method: 'POST',
+    ...options,
+    body: JSON.stringify(data),
+  });
+
+  return res.json();
+};
 
 const _put = async (url, data, options = DEFAULT_OPTIONS_WITH_AUTH) => {
   const res = await fetch(url, {
