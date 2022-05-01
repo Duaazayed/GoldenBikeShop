@@ -7,3 +7,7 @@ Features:
 3.Reserve a desired bike: I tried to make form to reserve a desired bike, but I need some help how to submit reservation on database
 4.Cancel reservation: Not Yet
 5.Save reservation to database I am working on it
+to run the client side write localhost:4000
+you will see login page and if you don't register you can click need to register
+then you should login again and see home page then click to search for a bike to view all available bikes
+you can choose your desired bike and go to reservation form page and fill the form and see the confimarion page. 
